@@ -4,9 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Employee employee = new Employee();
+        RoleBehavior person = new RoleImpl();
 
-        employee.addRole();
+        person = new ManagerDecorator(person);
+
+        person = new EngineerDecorator(person);
+
+
+        System.out.println(person.addRole());
 
     }
 }
