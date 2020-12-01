@@ -10,5 +10,10 @@ public class ManagerDecorator extends RoleDecorator {
         return super.addRole() + " Manager ";
     }
 
+    @Override
+    public int salary() {
+        return super.salary()+10000;
+    }
+
 
 }

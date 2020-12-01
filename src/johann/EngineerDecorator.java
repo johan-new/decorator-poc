@@ -11,4 +11,9 @@ public class EngineerDecorator extends RoleDecorator {
         return super.addRole() + " Engineer ";
     }
 
+    @Override
+    public int salary() {
+        return super.salary()+4000;
+    }
+
 }

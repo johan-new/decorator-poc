@@ -12,4 +12,9 @@ public abstract class RoleDecorator implements RoleBehavior{
     public String addRole() {
         return decoratedRole.addRole();
     }
+
+    @Override
+    public int salary() {
+        return decoratedRole.salary();
+    }
 }

@@ -11,4 +11,8 @@ public class ProgrammerDecorator extends RoleDecorator {
         return super.addRole() + " Programmer ";
     }
 
+    @Override
+    public int salary() {
+        return super.salary()+5000;
+    }
 }
